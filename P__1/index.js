@@ -53,7 +53,7 @@ function Particle(x, y, size, col1, col2, vx, vy){
 
 function init(numOfParticles){
     for (let i = 0; i < numOfParticles; i++){
-        particlesArr.push( new Particle(Mouse.x || Math.random() * canvas.width, Mouse.y || Math.random() * canvas.height, 10, "gray", "tomato", Math.random()*5, Math.random()*3));
+        particlesArr.push( new Particle(Mouse.x || Math.random() * canvas.width, Mouse.y || Math.random() * canvas.height, 10, "gray", "royalblue", Math.random()*5, Math.random()*3));
         setTimeout(()=>{
             particlesArr.splice(0, 1);
         }, 1000)
